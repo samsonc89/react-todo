@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 function App() {
+  const [newItem, setNewItem] = useState("");
   return (
     <>
       <form className="new-item-form">
@@ -14,6 +17,13 @@ function App() {
           <label>
             <input type="checkbox" />
             Item 1
+          </label>
+          <button className="btn btn-delete">Delete</button>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" />
+            Item 2
           </label>
           <button className="btn btn-delete">Delete</button>
         </li>
